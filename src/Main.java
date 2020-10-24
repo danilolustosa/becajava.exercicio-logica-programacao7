@@ -1,23 +1,9 @@
-import java.util.Scanner;
-
 public class Main {
 
-	public static void main(String[] args) {		
-		Scanner leitor = new Scanner(System.in);		
+	public static void main(String[] args) {	
 		
-		int[] numeros = new int[10];		
+		Pilha pilha = new Pilha();
+		pilha.ImprimeDecrescente();		
 		
-		for(int i = 0; i < 10; i++) {			
-			System.out.println("Digite o " + (i + 1) + "º número:");
-			numeros[i] = leitor.nextInt();		
-		}
-		
-		
-		for(int i = 9; i >= 0; i--) {
-			System.out.println(numeros[i]);
-		}		
-		
-		
-		leitor.close();
 	}
 }
